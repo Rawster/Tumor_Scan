@@ -12,8 +12,8 @@ nifti_data_view = nifti_data[:,:,:,1]
 nifti_data_view = swap_values(nifti_data_view)
 model = voxelmap.Model(nifti_data_view)
 
-#VoxelsArray = np.array(Voxels)
-#model = voxelmap.Model(VoxelsArray)
+VoxelsArray = np.array(Voxels)
+model = voxelmap.Model(VoxelsArray)
 
 
 # map each voxel embedding (int) to a particular [color, alpha_transparency] combination
